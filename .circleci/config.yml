@@ -7,6 +7,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: "Call to rancher to deploy"
           command: |
